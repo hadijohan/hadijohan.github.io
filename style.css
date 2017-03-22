@@ -1,0 +1,271 @@
+html{
+	height:100%;
+}
+body{
+	background: #F3F0ED; /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to top, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to top, #08070D , #3F1521 , #872923 , #BF6540 , #737979 , #274964); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: cover;
+	background-attachment:fixed;
+	background-size:cover;
+}
+@font-face {
+    font-family: Kaushan;
+    src: url(fonts/KaushanScript-Regular.otf);
+}
+div#contentmenu{
+	background-image: url("images/timeline.jpg");
+	background-color: #fff;
+	background-repeat:no-repeat;
+	width:200px;
+	border:#EEBABD 1px solid;
+	position:fixed;
+	font-family: "Arial", Verdana, Tahoma;
+	word-wrap:break-word;
+	background-clip: content-box;
+}
+div.contentmenu1>h3{
+	background: -webkit-linear-gradient(#4389A2, #5C258D );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-weight:100;
+}
+div.contentmenu1>p{
+	text-align:center;
+	color:#1A1A1A;
+	margin-top:0px;
+	font-size:14px;
+}
+div.contentmenu1>img{
+	display:block;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:90%;
+	border-radius:50%;
+	transition-duration:0.2s;
+}
+div.contentmenu1>img:hover{
+}
+div.contentmenu1>a{
+	text-decoration:none;
+	text-align:center;
+	color:#344979;
+	background-color:rgba(0, 0, 0, 0.0);
+	border:#344979 1px solid;
+	margin-bottom:3px;
+	display:block;
+	padding:5px 5px;
+	margin-right:2px;
+	margin-left:2px;
+}
+div.contentmenu1>a:hover{
+	background-color:#344979;
+	color:#fff;
+}
+div.content{
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: "Arial", Verdana, Tahoma;
+	width:600px;
+	background-color:#fff;
+	border:#DDDDDD 1px solid;
+	word-wrap:break-word;
+	color:#3B3B3B;
+}
+div.alt{
+	background-color:#fff;
+	color:#d60f74;
+	border:#DDDDDD 1px solid;
+}
+div.center{
+	text-align:center;
+}
+div.video>h2{
+	background-image: url(images/video-icon.png);
+	background-position: 99%;
+	background-repeat:no-repeat;
+	background-size:30px;;
+}
+div.content>img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:570px;
+	width:100%;
+	min-height:0px;
+	height:100%;
+	transition: opacity .3s ease-in;
+}
+div.content>video{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	min-width:570px;
+	width:100%;
+	min-height:0px;
+	height:100%;
+	transition: opacity .3s ease-in;
+}
+div.content>h2{
+	font-weight:100;
+	padding:10px 15px;
+	font-size:120%;
+	margin-top:0px;
+	margin-bottom:0px
+}
+div.content>p{
+	background-color:#fff;
+	color:#757575;
+	padding:10px 15px;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-size:14px;
+}
+.alt{
+	color: #d60f74;
+}
+div.content>p>a{
+	text-decoration:none;
+	color:#3399ff;
+}
+div.content>p>a:hover{
+	color:#D8D8D8;
+}
+div#spotify{
+	border:#23CF5F 1px solid;
+	position:fixed;
+	width:80px;
+	height:80px;
+	transition-duration:0.3s;
+	bottom:0px;
+	display:none;
+}
+div#spotify:hover{
+	width:300px;
+}
+footer{
+	font-family: "Arial", Verdana, Tahoma;
+	background-color:#1A1A1A;
+	height:100vh;
+	min-width:100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin-left:-8px;
+	margin-right:-8px;
+	bottom:0%;
+	padding-top: -8px;
+	word-wrap:break-word;
+	box-shadow: 0px 8px 0px rgb(55,55,55);
+}
+footer>h1{
+	background: #fff; /* fallback for old browsers */
+	font-family: "Kaushan", Arial, Verdana, Tahoma;
+	color:#fff;
+	text-align:center;
+	font-weight:100;
+	font-size:500%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+footer>p{
+	font-family: "Arial", Verdana, Tahoma;
+	color:#fff;
+	text-align:center;
+}
+/*//START//MOBILE//CSS//HERE//START//*/
+@media screen and (max-device-width:768px) {
+div#contentmenu{
+	right:0px;
+	background-color:#FF5A5F;
+	max-height:50px;
+	width:50px;
+	overflow:hidden;
+	transition-duration:0.3s;
+	background-image: url(images/menu.png);
+	background-size:50px;
+	background-repeat:no-repeat;
+	background-position: right top;
+	border:#FF5A5F 1px solid;
+	top:0px;
+}
+div#contentmenu:hover{
+	background-color:#fff;
+	width:70%;
+	max-height:100%;
+	overflow:auto;
+	opacity:initial;
+	background-image: url(images/menu.png);
+	background-position: right top;
+	border:#EEBABD 1px solid;
+}
+div.contentmenu1{
+	opacity:0;
+}
+div.contentmenu1:hover{
+	opacity:1;
+}
+div.contentmenu1>img{
+	width:70px;
+	height:70px;
+}
+div.contentmenu1>p{
+}
+div.contentmenu1>h3{
+	font-size:250%;
+}
+div.contentmenu1>a{
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+div.content{
+	width:100%;
+	margin-bottom:20px;
+	margin-left:-1px;
+	background-clip: padding-box;
+}
+div.video>h2{
+	background-size:10%;
+}
+div.content>h2{
+	font-size:115%;
+	padding:10px 15px;
+}
+div.content>p{
+	font-size:90%;
+	padding:10px 15px;
+}
+div.content>img{
+	min-width:100%;
+	width:100%;
+}
+div.content>video{
+	min-width:100%;
+	width:100%;
+	height:auto;
+}
+div.content>video:after{
+}
+footer{
+	/*display:none;*/ /* include or not? */
+}
+div#spotify{
+	border:#23CF5F 1px solid;
+	position:fixed;
+	width:80px;
+	height:80px;
+	transition-duration:0.3s;
+	bottom:0px;
+	background-clip: padding-box;
+}
+div#spotify:hover{
+	width:99.4%;
+}
+}
