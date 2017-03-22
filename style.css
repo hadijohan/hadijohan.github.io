@@ -176,6 +176,8 @@ footer>p{
 	font-family: "Arial", Verdana, Tahoma;
 	color:#fff;
 	text-align:center;
+	margin: 0px 500px;
+	padding: 10px 10px;
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
