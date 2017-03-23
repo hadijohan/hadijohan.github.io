@@ -57,7 +57,6 @@ div.contentmenu1>a{
 	background-color:rgba(0, 0, 0, 0.0);
 	border:#344979 1px solid;
 	display:block;
-	padding:5px 5px;
 }
 div.contentmenu1>a:hover{
 	background-color:#344979;
@@ -218,11 +217,8 @@ div.contentmenu1>h3{
 	font-size:250%;
 }
 div.contentmenu1>a{
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-left:15px;
-	margin-right:15px;
-	margin-bottom:10px;
+	padding: 10px 10px;
+	margin: 10px 5px;
 }
 div.content{
 	width:100%;
@@ -252,8 +248,11 @@ div.content>video{
 }
 div.content>video:after{
 }
-footer{
-	/*display:none;*/ /* include or not? */
+footer>h2{
+	font-size: 100%;
+}
+footer>p{
+	margin: 10px 10px;
 }
 div#spotify{
 	border:#23CF5F 1px solid;
