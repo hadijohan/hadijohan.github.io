@@ -20,11 +20,9 @@ div.contentmenu1>a{
 	color:#EEBABD;
 	background-color:rgba(0, 0, 0, 0.0);
 	border:#EEBABD 1px solid;
-	margin-bottom:3px;
+	margin: 10px 3px;
 	display:block;
-	padding:5px 5px;
-	margin-right:2px;
-	margin-left:2px;
+	padding:10px 10px;
 }
 div.contentmenu1>a:hover{
 	background-color:#EEBABD;
