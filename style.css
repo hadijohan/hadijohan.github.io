@@ -139,7 +139,7 @@ div#spotify{
 	height:80px;
 	transition-duration:0.3s;
 	bottom:0px;
-	display:none;
+	/*display:none; */
 }
 div#spotify:hover{
 	width:300px;
