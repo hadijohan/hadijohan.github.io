@@ -183,7 +183,7 @@ footer>p{
 @media screen and (max-device-width:768px) {
 div#contentmenu{
 	right:0px;
-	background-color:#FF5A5F;
+	background-color:#fff;
 	max-height:50px;
 	width:50px;
 	overflow:hidden;
