@@ -71,11 +71,14 @@ div.content{
 	background-color:#fff;
 	border:#DDDDDD 1px solid;
 	word-wrap:break-word;
-	color:#3B3B3B;
 }
 div.alt{
 	background-color:#fff;
 	color:#d60f74;
+	border:#DDDDDD 1px solid;
+}
+div.spotifydark{
+	background-color:#282828;
 	border:#DDDDDD 1px solid;
 }
 div.center{
@@ -108,6 +111,7 @@ div.content>video{
 	transition: opacity .3s ease-in;
 }
 div.content>h2{
+	color:#3B3B3B;
 	font-weight:100;
 	padding:10px 15px;
 	font-size:120%;
@@ -124,6 +128,15 @@ div.content>p{
 }
 .alt{
 	color: #d60f74;
+}
+.spotifygreen{
+	color:#1ED760;
+}
+.spotifygreen::before{
+	content: "Playlist : ";
+}
+.spotifygreen::after{
+	content: " mix";
 }
 div.content>p>a{
 	text-decoration:none;
@@ -249,8 +262,8 @@ div.content>video{
 }
 div.content>video:after{
 }
-footer>h2{
-	font-size: 20%;
+footer>h1{
+	font-size: 30px;
 }
 footer>p{
 	margin: 10px 10px;
