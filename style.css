@@ -136,7 +136,7 @@ div.content>p{
 	content: "Playlist : ";
 }
 .spotifygreen::after{
-	content: " mix";
+	content: "";
 }
 div.content>p>a{
 	text-decoration:none;
