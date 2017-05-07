@@ -203,6 +203,7 @@ div.contentmenu1{
 	background-position: right top;
 	border:#FF5A5F 1px solid;
 	top:0px;
+	opacity:1;
 }
 div.contentmenu1:hover{
 	background-color:#fff;
@@ -213,11 +214,6 @@ div.contentmenu1:hover{
 	background-image: url(images/menu.png);
 	background-position: right top;
 	border:#EEBABD 1px solid;
-}
-div.contentmenu1{
-	opacity:0;
-}
-div.contentmenu1:hover{
 	opacity:1;
 }
 div.contentmenu1>img{
