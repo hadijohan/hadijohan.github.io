@@ -190,7 +190,7 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
-div#contentmenu{
+div.contentmenu1{
 	right:0px;
 	background-color:#fff;
 	max-height:50px;
@@ -204,7 +204,7 @@ div#contentmenu{
 	border:#FF5A5F 1px solid;
 	top:0px;
 }
-div#contentmenu:hover{
+div.contentmenu1:hover{
 	background-color:#fff;
 	width:70%;
 	max-height:100%;
