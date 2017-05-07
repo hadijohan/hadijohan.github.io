@@ -13,16 +13,22 @@ body{
     font-family: Kaushan;
     src: url(fonts/KaushanScript-Regular.otf);
 }
-div.contentmenu1{
-	background-image: url("images/timeline.jpg");
-	background-color: #fff;
-	background-repeat:no-repeat;
+div#contentmenu{
 	width:200px;
 	border:#EEBABD 1px solid;
 	position:fixed;
+	z-index: 1;
+}
+div.contentmenu1{
+	width:200px;
+	z-index: 1;
+	background-image: url("images/timeline.jpg");
+	background-color: #fff;
+	background-repeat:no-repeat;
 	font-family: "Arial", Verdana, Tahoma;
 	word-wrap:break-word;
 	background-clip: content-box;
+	position:absolute;
 }
 div.contentmenu1>p{
 	text-align:center;
@@ -190,35 +196,30 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
-div.contentmenu1{
-	right:0px;
-	background-color:#fff;
-	max-height:50px;
-	width:50px;
-	overflow:hidden;
-	transition-duration:0.3s;
+div#contentmenu{
 	background-image: url(images/menu.png);
 	background-size:50px;
 	background-repeat:no-repeat;
 	background-position: right top;
-	border:#FF5A5F 1px solid;
-	top:0px;
-	opacity:1;
+	transition-duration:0.3s;
+	height:50px;
+	width:50px;
+	right:0px;
+	background-color:fff;
+	overflow:hidden;
 }
-div.contentmenu1:hover{
-	background-color:#fff;
+div#contentmenu:hover{
 	width:70%;
-	max-height:100%;
-	overflow:auto;
-	opacity:initial;
-	background-image: url(images/menu.png);
-	background-position: right top;
-	border:#EEBABD 1px solid;
-	opacity:1;
+	height:80%;
 }
 div.contentmenu1>img{
+	transition-duration:3s;
 	width:70px;
 	height:70px;
+	opacity:0
+}
+div.contentmenu1>img:hover{
+	opacity:1
 }
 div.contentmenu1>p{
 	margin: 20px 30px;
