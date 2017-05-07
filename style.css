@@ -13,7 +13,7 @@ body{
     font-family: Kaushan;
     src: url(fonts/KaushanScript-Regular.otf);
 }
-div#contentmenu{
+div.contentmenu1{
 	background-image: url("images/timeline.jpg");
 	background-color: #fff;
 	background-repeat:no-repeat;
@@ -24,18 +24,9 @@ div#contentmenu{
 	word-wrap:break-word;
 	background-clip: content-box;
 }
-div.contentmenu1>h3{
-	background: -webkit-linear-gradient(#4389A2, #5C258D );
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-align:center;
-	margin-top:0px;
-	margin-bottom:0px;
-	font-weight:100;
-}
 div.contentmenu1>p{
 	text-align:center;
-	color:#1A1A1A;
+	color:#757575;
 	margin-top:0px;
 	font-size:14px;
 }
@@ -57,10 +48,16 @@ div.contentmenu1>a{
 	display:block;
 	margin:5px 10px 10px 10px;
 	padding:5px 5px;
+	border:#EEBABD 1px solid;
+	color:#EEBABD;
 }
 div.contentmenu1>a:hover{
-	background-color:#344979;
+	background-color:#EEBABD;
 	color:#fff;
+}
+div.contentmenu1>a:visited{
+	text-decoration:none;
+	
 }
 div.content{
 	margin-bottom:50px;
@@ -71,6 +68,9 @@ div.content{
 	background-color:#fff;
 	border:#DDDDDD 1px solid;
 	word-wrap:break-word;
+}
+div.hidden{
+	display:none;
 }
 div.alt{
 	background-color:#fff;
@@ -173,7 +173,7 @@ footer{
 }
 footer>h1{
 	background: #fff; /* fallback for old browsers */
-	font-family: "Kaushan", Arial, Verdana, Tahoma;
+	font-family: "Arial", Verdana, Tahoma;
 	color:#fff;
 	text-align:center;
 	font-weight:100;
