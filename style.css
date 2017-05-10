@@ -13,63 +13,57 @@ body{
     font-family: Kaushan;
     src: url(fonts/KaushanScript-Regular.otf);
 }
-div#contentmenu{
-	width:200px;
-	border:#EEBABD 1px solid;
+div.menu{
+	background-color:fff;
+	border:#DDDDDD 1px solid;
 	position:fixed;
-	z-index: 1;
-}
-div.contentmenu1{
 	width:200px;
-	z-index: 1;
-	background-image: url("images/timeline.jpg");
-	background-color: #fff;
-	background-repeat:no-repeat;
-	font-family: "Arial", Verdana, Tahoma;
-	word-wrap:break-word;
-	background-clip: content-box;
-	position:absolute;
+	background-color:#fff;
+	font-family: "Courier New", Verdana, Tahoma;
 }
-div.contentmenu1>p{
-	text-align:center;
-	color:#757575;
-	margin-top:0px;
-	font-size:14px;
-}
-div.contentmenu1>img{
-	display:block;
-	margin:auto;
-	margin-top:10px;
-	margin-bottom:10px;
-	width:90%;
+div.menu>img{
+	width:70%;
 	border-radius:50%;
-	transition-duration:0.2s;
-}
-div.contentmenu1>img:hover{
-}
-div.contentmenu1>a{
-	text-decoration:none;
-	text-align:center;
-	background-color:rgba(0, 0, 0, 0.0);
+	margin: 10px auto 10px auto;
 	display:block;
-	margin:5px 10px 10px 10px;
-	padding:5px 5px;
-	border:#EEBABD 1px solid;
-	color:#EEBABD;
 }
-div.contentmenu1>a:hover{
-	background-color:#EEBABD;
+div.menu>h1{
+	opacity:0;
+	display:none;
+}
+div.menu>h2{
+	background-color:#000;
 	color:#fff;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:10px 15px;
+	font-weight:100;
+	font-size:120%;
+	text-align:center;
+	word-break: break-word;
 }
-div.contentmenu1>a:visited{
+div.menu>a{
+	display: block;
+	background-color:rgba(0, 0, 0, 0.0);
+	color:#757575;
 	text-decoration:none;
+	padding:5px 5px;
+	font-size:14px;
+	text-align:center;
+	border:#DDDDDD 1px solid;
+	margin: 5px 50px;
+	word-break: break-word;
+}
+div.menu>a:hover{
+	background-color:#2d2d2d;
+	color:#fff;
+	border:#2d2d2d 1px solid;
 	
 }
 div.content{
 	margin-bottom:50px;
 	margin-left:auto;
 	margin-right:auto;
-	font-family: "Arial", Verdana, Tahoma;
 	width:600px;
 	background-color:#fff;
 	border:#DDDDDD 1px solid;
@@ -117,6 +111,7 @@ div.content>video{
 	transition: opacity .3s ease-in;
 }
 div.content>h2{
+	font-family: "Arial", Verdana, Tahoma;
 	color:#3B3B3B;
 	font-weight:100;
 	padding:10px 15px;
@@ -125,6 +120,7 @@ div.content>h2{
 	margin-bottom:0px
 }
 div.content>p{
+	font-family: "Courier New", Arial, Verdana, Tahoma;
 	background-color:#fff;
 	color:#757575;
 	padding:10px 15px;
@@ -147,6 +143,7 @@ div.content>p{
 div.content>p>a{
 	text-decoration:none;
 	color:#3399ff;
+	font-family: "Courier New", Arial, Verdana, Tahoma;
 }
 div.content>p>a:hover{
 	color:#D8D8D8;
@@ -196,40 +193,40 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
-div#contentmenu{
+div.menu{
 	background-image: url(images/menu.png);
 	background-size:50px;
 	background-repeat:no-repeat;
 	background-position: right top;
-	transition-duration:0.3s;
-	height:50px;
-	width:50px;
 	right:0px;
-	background-color:fff;
+	width:50px;
+	height:50px;
+	transition-duration:0.1s;
 	overflow:hidden;
 }
-div#contentmenu:hover{
+div.menu:hover{
 	width:70%;
-	height:80%;
+	height:auto;
+	overflow-y:scroll;
 }
-div.contentmenu1>img{
-	transition-duration:3s;
-	width:70px;
-	height:70px;
-	opacity:0
+div.menu>h1{
+	display:initial;
+	font-size:50px;
 }
-div.contentmenu1>img:hover{
-	opacity:1
+div.menu>h2{
+	font-size:150%;
+	word-break:initial;
+	overflow:hidden;
 }
-div.contentmenu1>p{
-	margin: 20px 30px;
+div.menu>img{
+	width:30%;
 }
-div.contentmenu1>h3{
-	font-size:250%;
-}
-div.contentmenu1>a{
-	padding: 5% 5%;
-	margin:2% 2% 2% 2%;
+div.menu>a{
+	padding: 10px 15px 10px 15px;
+	margin:20px 20px;
+	font-size:100%;
+	word-break:initial;
+	overflow:hidden;
 }
 div.content{
 	width:100%;
