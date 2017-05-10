@@ -36,16 +36,7 @@
 <!--//START//LEFT//MENU//HERE//START//-->
 		<div class="links">
 			
-			<div class="menu">
-			<h1>
-			placeholder
-			</h1>
-			<img class=".nonDraggableImage" src="images/profile3.jpg" ondragstart="return false;">
-			<h2>Archive</h2>
-				<a href="/index.html">home</a>
-				<a href="#2">my</a>
-				<a href="#3">friend</a>
-			</div>
+			<div w3-include-html="menu.html"></div>
 			
 		</div>
 <!--//END//LEFT//MENU//HERE//END//-->
@@ -68,7 +59,7 @@
 			<div class="content">
 				<h2>convoluted <span class="alt">truth.</span></h2>
 				<img data-src="images/flower3.jpg">
-				<p>3/28/2017 source<a href="#test">source</a></p>
+				<p>3/28/2017</p>
 			</div>
 			
 			<div w3-include-html="content.html"></div>
@@ -120,24 +111,10 @@
 <!--//END//I//PUT//MY//CONTENT//HERE//END//-->
 	
 	<div class="footer">
-		<footer>
-			<div id="spotify">
-				<iframe src="https://embed.spotify.com/?uri=spotify:user:altimint:playlist:5qVc2H0g5XLA30vgD3pnOw" 
-				width="100%" 
-				height="80" 
-				frameborder="0" 
-				allowtransparency="true">
-				</iframe>
-			</div>
-			<h1>
-			♥ ♦ ♣ ♠
-			</h1>
-			<p>
-			I'm not even sure what this is.
-			</p>
-			<p>- hadi johan -</p>
-			<a name="bottom">
-		</footer>
+	
+		<div w3-include-html="footer.html"></div>
+		
 	</div>
+	
 	</body>
 </html>
