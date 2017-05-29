@@ -211,14 +211,12 @@ footer>p{
 .FormRequest {
 	background: #fff;
 	margin:0px auto;
-	width:100%;
 	overflow-x:hidden;
 }
 .FormRequest #formRequest input[type="text"]{
 	border:1px solid #dddddd;
 	background: #ffffff;
 	color:#757575;
-	width:100%;
 	padding:30px;
 	font-family: "Courier New", Support, Arial, Verdana, Tahoma;
 }
