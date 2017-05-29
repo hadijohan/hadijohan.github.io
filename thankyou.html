@@ -2,11 +2,21 @@
 <html>
 	<head>
 <!--//BEWARE//SUBLIMINAL//MESSAGES//BEWARE//-->
-		<title>sure</title>
+		<title>Thank You</title>
 		<meta name="theme-color" content="#FF5A5F">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 		<link rel="shortcut icon" href="favicon.ico?v=2"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script>
+function postContactToGoogle() {
+var question=$('#question').val();
+$.ajax({
+url:"https://docs.google.com/forms/d/e/1FAIpQLSc-0B_V_fwQFICrJHPp6dl3l8CVeYX4eBuDyT_62E1qlBLkKQ/formResponse",data:{"entry.228974286":question},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+});
+}
+</script>
 		<script>
 			var video = document.getElementById('video');
 			video.addEventListener('click',function(){
@@ -50,43 +60,15 @@
 -->
 	<div class="wrap">
 			
-			<div class="content hidden">
-				<center>
-				<a class="twitter-timeline" data-lang="en" data-height="300" data-dnt="true" data-theme="light" data-link-color="#d60f74" href="https://twitter.com/hadijohan99">Tweets by hadijohan99</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</center>
-			</div>
-			
-			<div w3-include-html="content.html"></div>
-			
-			<div class="content">
-				<h2>feline führers.</h2>
-				<img data-src="images/cats.jpg">
-				<p>they're not mine *cries*<br>3/23/2017</p>
-			</div>
-			
-			<div class="content">
-				<h2>logbook.</h2>
-				<img data-src="images/aesthetic.jpg">
-				<p>3/22/2017</p>
-			</div>
-			
-			<div class="content">
-				<h2>beauty.</h2>
-				<img data-src="images/flower1.jpg">
-				<p>1/31/2017</p>
-			</div>
-			
-			<div class="content">
-				<h2>mänəˌkrōm</h2>
-				<img data-src="images/flower2.jpg">
-				<p>1/31/2017</p>
-			</div>
-			
-			<div class="content">
-				<h2>golden-hour</h2>
-				<img data-src="images/pillars.jpg">
-				<p>grains <span class="alt">♥</span></p>
-			</div>
+		<div class="content">
+			<h2>Your thoughts were successfully sent to the stratosphere.</h2>
+			<p>
+			T H A N K  Y O U.
+			<br>
+			<br>
+			Forgot something? tell me again <a href="Tell-Me-Anything.html">HERE</a>
+			</p>
+		</div>
 		
 	</div>
 	
