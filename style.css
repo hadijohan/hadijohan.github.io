@@ -261,11 +261,9 @@ div.menu:hover{
 	height:auto;
 	overflow-y:scroll;
 }
-div#mborder{
-	overflow-y:hidden;
-}
-div#mborder:hover{
-	overflow-y:scroll;
+div#mborder::-webkit-scrollbar-track{
+	background-color:#fff;
+	margin: 50px;
 }
 div#mborder>h1{
 	display:initial;
