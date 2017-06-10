@@ -19,7 +19,8 @@ div.menu{
 	position:fixed;
 	width:200px;
 	background-color:#fff;
-	font-family: "Courier New", Support, Arial, Verdana, Tahoma; 
+	font-family: "Courier New", Support, Arial, Verdana, Tahoma;
+	height:70%;
 }
 div.menu>img{
 	width:70%;
