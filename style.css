@@ -56,7 +56,6 @@ div.archive{
 	margin: 0px 0px;
 	padding: 0px 30px;
 	overflow:auto;
-	height: 300px;
 }
 div.archive>a{
 	display: block;
