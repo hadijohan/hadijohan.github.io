@@ -20,7 +20,7 @@ div.menu{
 	width:200px;
 	background-color:#fff;
 	font-family: "Courier New", Support, Arial, Verdana, Tahoma;
-	height:70%;
+	height:auto;
 }
 div.menu>img{
 	width:70%;
