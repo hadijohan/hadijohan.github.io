@@ -261,6 +261,12 @@ div.menu:hover{
 	height:90%;
 	overflow-y:scroll;
 }
+div#mborder{
+	overflow-y:hidden;
+}
+div#mborder:hover{
+	overflow-y:scroll;
+}
 div#mborder>h1{
 	display:initial;
 	font-size:50px;
