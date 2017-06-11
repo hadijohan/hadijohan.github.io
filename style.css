@@ -78,7 +78,7 @@ div.mborder>a{
     white-space:nowrap;
     text-overflow: ellipsis;
 }
-div.archive>a:hover{
+div.mborder>a:hover{
 	background-color:#2d2d2d;
 	color:#fff;
 	border:#2d2d2d 1px solid;
@@ -274,10 +274,10 @@ div.mborder:hover{
 div.mborder>h1{
 	display:initial;
 	font-size:50px;
-	display:none;
+	display:hidden;
 }
 div.mborder>h2{
-	font-size:150%;
+	font-size:100%;
 	word-break:initial;
 	overflow:hidden;
 }
@@ -286,8 +286,8 @@ div.mborder>img{
 }
 div.mborder>a{
 	padding: 10px 10px;
-	margin:20px 0px;
-	font-size:100%;
+	margin:20px 5px;
+	font-size:70%;
 	word-break:initial;
 }
 div.content{
