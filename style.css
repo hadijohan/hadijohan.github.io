@@ -13,7 +13,7 @@ body{
     font-family: Support;
     src: url(fonts/Cour.ttf);
 }
-div.menu{
+div#menu{
 	background-color:fff;
 	border:#DDDDDD 1px solid;
 	position:fixed;
@@ -23,17 +23,17 @@ div.menu{
 	height:70%;
 	overflow-x:hidden;
 }
-div#mborder>img{
+div.mborder>img{
 	width:70%;
 	border-radius:50%;
 	margin: 10px auto 10px auto;
 	display:block;
 }
-div#mborder>h1{
+div.mborder>h1{
 	opacity:0;
 	display:none;
 }
-div#mborder>h2{
+div.mborder>h2{
 	background-color:#000;
 	color:#fff;
 	margin-top:0px;
@@ -44,19 +44,19 @@ div#mborder>h2{
 	text-align:center;
 	word-break: break-word;
 }
-div#mborder{
+div.mborder{
 	height:100%;
 	overflow-y:scroll;
 	overflow-x:hidden;
 }
-div#mborder::-webkit-scrollbar-track{
+div.mborder::-webkit-scrollbar-track{
 	background-color:#fff;
 	margin: 0px;
 }
-div#mborder::-webkit-scrollbar{
+div.mborder::-webkit-scrollbar{
 	width:6px;
 }
-div#mborder::-webkit-scrollbar-thumb{
+div.mborder::-webkit-scrollbar-thumb{
 	background-color:#dddddd;
 }
 div.archive{ 
@@ -64,7 +64,7 @@ div.archive{
 	padding: 0px 30px;
 	overflow:auto;
 }
-div.archive>a{
+div.mborder>a{
 	display: block;
 	background-color:rgba(0, 0, 0, 0.0);
 	color:#757575;
@@ -73,7 +73,7 @@ div.archive>a{
 	font-size:14px;
 	text-align:center;
 	border:#DDDDDD 1px solid;
-	margin: 5px 0px;
+	margin: 5px 5px;
 	overflow:hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
@@ -245,7 +245,7 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
-div.menu{
+div#menu{
 	background-image: url(images/menu.png);
 	background-size:50px;
 	background-repeat:no-repeat;
@@ -256,30 +256,35 @@ div.menu{
 	transition-duration:0.3s;
 	overflow:hidden;
 }
-div.menu:hover{
+div#menu:hover{
 	width:70%;
 	height:90%;
 	overflow-y:scroll;
 }
-div#mborder{
+div.mborder{
 	overflow-y:hidden;
+	overflow-x:hidden;
+	opacity: 0;
 }
-div#mborder:hover{
+div.mborder:hover{
 	overflow-y:scroll;
+	display:block;
+	opacity:1;
 }
-div#mborder>h1{
+div.mborder>h1{
 	display:initial;
 	font-size:50px;
+	display:none;
 }
-div#mborder>h2{
+div.mborder>h2{
 	font-size:150%;
 	word-break:initial;
 	overflow:hidden;
 }
-div#mborder>img{
+div.mborder>img{
 	width:30%;
 }
-div.archive>a{
+div.mborder>a{
 	padding: 10px 10px;
 	margin:20px 0px;
 	font-size:100%;
