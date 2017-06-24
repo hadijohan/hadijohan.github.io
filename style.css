@@ -15,48 +15,48 @@ body{
 }
 #menubutton {
 	background-color: white;
-    height: 50px;
-    width: 50px;
-    border: #dddddd 1px solid;
-    outline: none;
+	height: 50px;
+	width: 50px;
+	border: #dddddd 1px solid;
+	outline: none;
 	position:fixed;
-    margin: 0 auto;
+	margin: 0 auto;
 	display:none;
 }
 #menubutton >div#one {
 	height: 5px;
-    width: 30px;
-	background:red;
-    margin: 5px auto 5px auto;
-    transition-duration:0.2s;
-    transition-delay:0.5s;
+	width: 30px;
+	background: #AA212A;
+	margin: 5px auto 5px auto;
+	transition-duration:0.2s;
+	transition-delay:0.5s;
 }
 #menubutton >div#two {
 	height: 5px;
-    width: 30px;
+	width: 30px;
 	background: #dddddd;
-    margin: 5px auto 5px auto;
-    transition-duration:0.2s;
-    transition-delay:0.5s;
+	margin: 5px auto 5px auto;
+	transition-duration:0.2s;
+	transition-delay:0.5s;
 }
 #menubutton >div#three {
 	height: 5px;
-    width: 30px;
-	background:blue;
-    margin: 5px auto 5px auto;
-    transition-duration:0.2s;
-    transition-delay:0.5s;
+	width: 30px;
+	background: #384764;
+	margin: 5px auto 5px auto;
+	transition-duration:0.2s;
+	transition-delay:0.5s;
 }
 #menubutton:active>div#one{
 	transform: translateY(10px) rotate(135deg);
-    transition-delay:0s;
+	transition-delay:0s;
 }
 #menubutton:active>div#two{
 	transition-delay:0s;
 }
 #menubutton:active>div#three{
 	transform: translateY(-10px) rotate(-135deg);
-    transition-delay:0s;
+	transition-delay:0s;
 }
 div#menu{
 	background-color:fff;
