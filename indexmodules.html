@@ -34,10 +34,10 @@
 	</head>
 	<body>
 <!--//START//LEFT//MENU//HERE//START//-->
-		<div id="contentmenu">
-			<div class="contentmenu1">
-			<div w3-include-html="contentmenu.html"></div>
-			</div>
+		<div class="links">
+			
+			<div w3-include-html="menu.html"></div>
+			
 		</div>
 <!--//END//LEFT//MENU//HERE//END//-->
 
@@ -49,6 +49,13 @@
 	content + video = video node
 -->
 	<div class="wrap">
+	
+			<div class="content"> <!--//CAN PLACE A "hidden sub-node"//-->
+				<center>
+				<a class="twitter-timeline" data-lang="en" data-height="300" data-dnt="true" data-theme="light" data-link-color="#d60f74" href="https://twitter.com/hadijohan99">Tweets by hadijohan99</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</center>
+			</div>
+			
 			<div w3-include-html="importantcontent.html"></div>
 		
 		
@@ -81,7 +88,7 @@
 		<div class="content video">
 			<h2>beach.mp4</h2>
 			<video poster="https://goo.gl/72Ayco" onclick="this.play();">
-			<source src="https://goo.gl/A3wmHG" type="video/mp4">
+			<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
 			</video>
 			<p>tap the image for video</p>
 		</div>
