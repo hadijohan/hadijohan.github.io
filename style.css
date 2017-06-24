@@ -67,6 +67,7 @@ div#menu{
 	font-family: "Courier New", Support, Arial, Verdana, Tahoma;
 	height:70%;
 	overflow-x:hidden;
+	transition-duration:0.2s;
 }
 div.mborder>img{
 	width:70%;
