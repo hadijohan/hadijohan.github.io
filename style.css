@@ -13,6 +13,51 @@ body{
     font-family: Support;
     src: url(fonts/Cour.ttf);
 }
+#menubutton {
+	background-color: white;
+    height: 50px;
+    width: 50px;
+    border: #dddddd 1px solid;
+    outline: none;
+	position:fixed;
+    margin: 0 auto;
+	display:none;
+}
+#menubutton >div#one {
+	height: 5px;
+    width: 30px;
+	background:red;
+    margin: 5px auto 5px auto;
+    transition-duration:0.2s;
+    transition-delay:0.5s;
+}
+#menubutton >div#two {
+	height: 5px;
+    width: 30px;
+	background: #dddddd;
+    margin: 5px auto 5px auto;
+    transition-duration:0.2s;
+    transition-delay:0.5s;
+}
+#menubutton >div#three {
+	height: 5px;
+    width: 30px;
+	background:blue;
+    margin: 5px auto 5px auto;
+    transition-duration:0.2s;
+    transition-delay:0.5s;
+}
+#menubutton:active>div#one{
+	transform: translateY(10px) rotate(135deg);
+    transition-delay:0s;
+}
+#menubutton:active>div#two{
+	transition-delay:0s;
+}
+#menubutton:active>div#three{
+	transform: translateY(-10px) rotate(-135deg);
+    transition-delay:0s;
+}
 div#menu{
 	background-color:fff;
 	border:#DDDDDD 1px solid;
@@ -28,10 +73,6 @@ div.mborder>img{
 	border-radius:50%;
 	margin: 10px auto 10px auto;
 	display:block;
-}
-div.mborder>h1{
-	opacity:0;
-	display:none;
 }
 div.mborder>h2{
 	background-color:#000;
@@ -245,36 +286,28 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
+#menubutton{
+	display:initial;
+	right:5px;
+	z-index:1;
+}
 div#menu{
-	background-image: url(images/menu.png);
 	background-size:50px;
 	background-repeat:no-repeat;
 	background-position: right top;
 	right:0px;
-	width:50px;
-	height:50px;
-	transition-duration:0.3s;
-	overflow:hidden;
-}
-div#menu:hover{
 	width:70%;
 	height:90%;
+	transition-duration:0.3s;
+	overflow:hidden;
 	overflow-y:scroll;
+	display:none;
+	right:5px;
 }
 div.mborder{
-	overflow-y:hidden;
-	overflow-x:hidden;
-	opacity: 0;
-}
-div.mborder:hover{
 	overflow-y:scroll;
+	overflow-x:hidden;
 	display:block;
-	opacity:1;
-}
-div.mborder>h1{
-	display:initial;
-	font-size:50px;
-	display:hidden;
 }
 div.mborder>h2{
 	font-size:100%;
