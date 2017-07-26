@@ -289,7 +289,7 @@ footer>p{
 @media screen and (max-device-width:768px) {
 #menubutton{
 	display:initial;
-	right:5px;
+	right:7px;
 	z-index:1;
 }
 div#menu{
@@ -303,7 +303,7 @@ div#menu{
 	overflow:hidden;
 	overflow-y:scroll;
 	display:none;
-	right:5px;
+	right:7px;
 }
 div.mborder{
 	overflow-y:scroll;
@@ -320,7 +320,7 @@ div.mborder>img{
 }
 div.mborder>a{
 	padding: 10px 10px;
-	margin:20px 5px;
+	margin: 10px 5px 10px 5px;
 	font-size:70%;
 	word-break:initial;
 }
@@ -338,8 +338,9 @@ div.content>h2{
 	padding:10px 15px;
 }
 div.content>p{
-	font-size:90%;
-	padding:10px 15px;
+	font-size: 80%;
+	padding: 10px 15px;
+	word-spacing: -2px;
 }
 div.content>img{
 	min-width:100%;
