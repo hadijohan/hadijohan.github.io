@@ -165,6 +165,7 @@ div.content>img{
 	min-height:0px;
 	height:100%;
 	transition: opacity .3s ease-in;
+	image-orientation: from-image;
 }
 div.content>video{
 	display:block;
