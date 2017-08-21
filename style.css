@@ -2,12 +2,11 @@ html{
 	height:100%;
 }
 body{
-	background: #F3F0ED; /* fallback for old browsers */
+	background-image: url("images/background.png");
 	/*background: -webkit-linear-gradient(to top, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
 	/*background: linear-gradient(to top, #08070D , #3F1521 , #872923 , #BF6540 , #737979 , #274964); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background-repeat: cover;
+	background-repeat: repeat;
 	background-attachment:fixed;
-	background-size:cover;
 }
 @font-face {
     font-family: Support;
@@ -138,14 +137,13 @@ div.content{
 div.hidden{
 	display:none;
 }
-div.alt{
-	background-color:#fff;
-	color:#FF5A5F;
-	border:#DDDDDD 1px solid;
+div.dark{
+	background-color:#000;
+	color:#fff;
+	border:#000 1px solid;
 }
-div.spotifydark{
-	background-color:#282828;
-	border:#DDDDDD 1px solid;
+.dark{
+	color:#fff;
 }
 div.center{
 	text-align:center;
@@ -188,7 +186,6 @@ div.content>h2{
 }
 div.content>p{
 	font-family: "Courier New", Support, Arial, Verdana, Tahoma;
-	background-color:#fff;
 	color:#757575;
 	padding:10px 15px;
 	margin-top:0px;
@@ -198,13 +195,10 @@ div.content>p{
 .alt{
 	color: #FF5A5F;
 }
-.spotifygreen{
-	color:#1ED760;
-}
-.spotifygreen::before{
+.playlist::before{
 	content: "Playlist : ";
 }
-.spotifygreen::after{
+.playlist::after{
 	content: "";
 }
 div.content>p>a{
@@ -288,6 +282,9 @@ footer>p{
 }
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
+body{
+	background-size: 180px 180px;
+}
 #menubutton{
 	display:initial;
 	right:7px;
