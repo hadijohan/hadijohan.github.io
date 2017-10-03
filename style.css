@@ -176,7 +176,7 @@ div.content>video{
 	transition: opacity .3s ease-in;
 }
 div.content>h2{
-	font-family: "Arial", Verdana, Tahoma;
+	font-family: "Calibri", Verdana, Tahoma;
 	color:#3B3B3B;
 	font-weight:100;
 	padding:10px 15px;
@@ -236,7 +236,7 @@ footer{
 }
 footer>h1{
 	background: #fff; /* fallback for old browsers */
-	font-family: "Arial", Verdana, Tahoma;
+	font-family: "Calibri", Verdana, Tahoma;
 	color:#fff;
 	text-align:center;
 	font-weight:100;
