@@ -54,3 +54,9 @@
   };
 
 })(window.jQuery || window.Zepto);
+
+$("img").unveil(200, function() {
+  $(this).load(function() {
+    this.style.opacity = 1;
+  });
+});

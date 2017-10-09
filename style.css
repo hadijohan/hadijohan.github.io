@@ -162,6 +162,7 @@ div.content>img{
 	width:100%;
 	min-height:0px;
 	height:100%;
+	opacity:0;
 	transition: opacity .3s ease-in;
 	image-orientation: from-image;
 }
