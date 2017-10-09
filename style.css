@@ -91,14 +91,14 @@ div.mborder{
 	overflow-x:hidden;
 }
 div.mborder::-webkit-scrollbar-track{
-	background-color:#fff;
+	background-color:rgba(0, 0, 0, 0);
 	margin: 0px;
 }
 div.mborder::-webkit-scrollbar{
-	width:6px;
+	width:0px;
 }
 div.mborder::-webkit-scrollbar-thumb{
-	background-color:#dddddd;
+	background-color:rgba(0, 0, 0, 0);
 }
 div.archive{ 
 	margin: 0px 0px;
@@ -301,7 +301,7 @@ div#menu{
 	overflow:hidden;
 	overflow-y:scroll;
 	display:none;
-	right:7px;
+	right:2px;
 }
 div.mborder{
 	overflow-y:scroll;
