@@ -131,7 +131,6 @@ div.content{
 	margin-right:auto;
 	width:600px;
 	background-color:#fff;
-	border:#DDDDDD 1px solid;
 	word-wrap:break-word;
 }
 div.hidden{
@@ -140,7 +139,6 @@ div.hidden{
 div.dark{
 	background-color:#000;
 	color:#fff;
-	border:#000 1px solid;
 }
 .dark{
 	color:#fff;
