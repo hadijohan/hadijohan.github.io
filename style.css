@@ -2,11 +2,13 @@ html{
 	height:100%;
 }
 body{
-	/*background-image: url("images/background2.png");
+	/*background-image: url("images/background2.png"); */
 	/*background: -webkit-linear-gradient(to top, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to top, #08070D , #3F1521 , #872923 , #BF6540 , #737979 , #274964); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-attachment:fixed;
+	background-size: cover;
+	background-position: center;
 }
 @font-face {
     font-family: Support;
@@ -282,7 +284,7 @@ footer>p{
 /*//START//MOBILE//CSS//HERE//START//*/
 @media screen and (max-device-width:768px) {
 body{
-	background-size: 180px 180px;
+	/*background-size: 180px 180px; FOR TILE ONLY */
 }
 #menubutton{
 	display:initial;
