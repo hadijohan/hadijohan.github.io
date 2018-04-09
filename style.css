@@ -3,8 +3,9 @@ html{
 }
 body{
 	/*background-image: url("images/background2.png"); */
-	/*background: -webkit-linear-gradient(to top, #114357 , #F29492); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #08070D , #3F1521 , #872923 , #BF6540 , #737979 , #274964); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #5D4157;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size: cover;
@@ -138,12 +139,21 @@ div.content{
 div.hidden{
 	display:none;
 }
-div.dark{
-	background-color:#000;
-	color:#fff;
-}
 .dark{
 	color:#fff;
+}
+div.dark>h2{
+	background-color:#000;
+	animation:example 1s infinite step-end;
+}
+@keyframes example{
+	25%	{text-shadow: 2px 1px 0 red, -1px -1px 0 cyan;}
+	27%	{text-shadow: 0px 0px 0 red, 0px 0px 0 cyan;}
+	95%	{text-shadow: 6px 6px 0 red, -5px -3px 0 cyan;}
+	99%	{text-shadow: 2px 2px 0 red, -3px -3px 0 cyan;}
+}
+div.dark>p{
+	background-color:#000;
 }
 div.center{
 	text-align:center;
