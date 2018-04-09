@@ -19,7 +19,7 @@ body{
 	background-color: white;
 	height: 50px;
 	width: 50px;
-	border: #dddddd 1px solid;
+	border: #fff 0px solid;
 	outline: none;
 	position:fixed;
 	margin: 0 auto;
@@ -62,7 +62,6 @@ body{
 }
 div#menu{
 	background-color:fff;
-	border:#DDDDDD 1px solid;
 	position:fixed;
 	width:200px;
 	background-color:#fff;
