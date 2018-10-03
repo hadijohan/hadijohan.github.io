@@ -8,7 +8,7 @@ body{
 	background: linear-gradient(to bottom, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-repeat: repeat-y;
 	background-attachment:fixed;
-	background-size: cover;
+	background-size: 100% auto;
 	background-position: center;
 }
 @font-face {
