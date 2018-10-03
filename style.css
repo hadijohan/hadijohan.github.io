@@ -294,7 +294,7 @@ footer>p{
 @media screen and (max-device-width:768px) {
 body{
 	/*background-size: 180px 180px; FOR TILE ONLY */
-	background-size: 100% 115%;
+	background-size: 100% 125%;
 	
 }
 #menubutton{
