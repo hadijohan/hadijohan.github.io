@@ -30,13 +30,14 @@
 		</script> -->
 		<script src="nodrag.js"></script>
 		<script src="w3data.js"></script>
+		<script src="jquery-3.4.1.js"></script>
 <!--//BEWARE//SUBLIMINAL//MESSAGES//BEWARE//-->
 	</head>
 	<body>
 <!--//START//LEFT//MENU//HERE//START//-->
 		<div class="links">
 			
-			<div w3-include-html="menu.html"></div>
+			<div id="menu"</div>
 			
 		</div>
 <!--//END//LEFT//MENU//HERE//END//-->
@@ -50,7 +51,7 @@
 -->
 	<div class="wrap">
 			
-			<div w3-include-html="content.html"></div>
+			
 			
 			<div class="content">
 				<h2>light leak.</h2>
@@ -97,6 +98,11 @@
 		<script src="jquery.unveil.js"></script>
 		<script src="twitter2.js"></script>
 		<script src="showhide.js"></script>
+		<script>
+$(function(){
+  $("#menu").load("menu.html");
+});
+</script>
 <!--//END//I//PUT//MY//CONTENT//HERE//END//-->
 	
 	<div id="footer">

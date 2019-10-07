@@ -143,6 +143,8 @@ div.hidden{
 }
 div.dark>h2{
 	background-color:#000;
+}
+div.chr{
 	animation:example 1s infinite step-end;
 }
 @keyframes example{
