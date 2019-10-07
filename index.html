@@ -37,7 +37,7 @@
 <!--//START//LEFT//MENU//HERE//START//-->
 		<div class="links">
 			
-			<div id="menu"</div>
+			<div id="menu"></div>
 			
 		</div>
 <!--//END//LEFT//MENU//HERE//END//-->
@@ -51,7 +51,7 @@
 -->
 	<div class="wrap">
 			
-			
+			<div id="content"></div>
 			
 			<div class="content">
 				<h2>light leak.</h2>
@@ -99,10 +99,15 @@
 		<script src="twitter2.js"></script>
 		<script src="showhide.js"></script>
 		<script>
-$(function(){
-  $("#menu").load("menu.html");
-});
-</script>
+		$(function(){
+		$("#menu").load("menu.html");
+		});
+		</script>
+		<script>
+		$(function(){
+		$(".content").load("content.html");
+		});
+		</script>
 <!--//END//I//PUT//MY//CONTENT//HERE//END//-->
 	
 	<div id="footer">
