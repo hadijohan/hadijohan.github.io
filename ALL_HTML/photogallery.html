@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photo Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<base href="../">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+			<script> 
+
+			function changeImage1()
+			{
+			var img = document.getElementById("image");
+			img.src="ALL_IMAGES/personal_artwork/magazine.png";
+			return false;
+			}
+
+			function changeImage2()
+			{
+			var img = document.getElementById("image");
+			img.src="ALL_IMAGES/personal_artwork/shark.png";
+			return false;
+			}
+
+			function changeImage3()
+			{
+			var img = document.getElementById("image");
+			img.src="ALL_IMAGES/personal_artwork/mip.png";
+			return false;
+			}
+
+			</script>
+
+		<script src="w3.js"></script>
+
+	</head>
+	<body>
+	
+		<div w3-include-html="ALL_HTML/menubox.html"></div>
+		
+		<div id="menubox2">
+			<div id="menu2">
+				<h2>Click the buttons below to view my photos</h2>
+				<p id="p"><br><br>There are three pictures, a magazine cover, a fun collage and an ad for MIP.</p>
+				<hr>
+				<br>
+				<button id="clickme" onclick='document.getElementById("p").innerHTML = "This is my magazine cover. I decided to base my image to suit the theme of LIFE magazine, a weekly published magazine about photography."; changeImage1();'>Magazine Cover</button>
+				<button id="clickme" onclick='document.getElementById("p").innerHTML = "<br><br>The collage I created is inspired by the movie Jaws but with a twist of humour."; changeImage2();'>Collage</button>
+				<button id="clickme" onclick='document.getElementById("p").innerHTML = "<br>This is my third picture. The idea came from my imagination of what a production company should be."; changeImage3();'>MIP Ad</button>
+			</div>
+		</div>
+		
+		<div id="parent">
+			
+			<div id="child">
+				<div id="mid">
+					
+					<div id="box">
+						<img id="image" class="gallery" src="ALL_IMAGES/gif/gallery.gif">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	<script>
+		includeHTML();
+	</script>
+	</body>
+	<footer>
+	</footer>
+</html>
