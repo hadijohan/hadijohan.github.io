@@ -1,62 +1,77 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hadi</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<base href="">
-		<link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Hadi Johan</title>
+</head>
+<body>
+    <div class="container">
+        <section style="background-color: lightblue;">
+                <h2><span class="type"></span></h2>
+                <img src="./media/image/drawing.png" alt="" srcset="" style="width:10%;">
+        </section>
 
-		<script src="w3.js"></script>
+        <section style="background-color: lightpink;">
+            <div class="rect">
+                <img src="./media/image/drawing.png" alt="" srcset="" style="width:10%;">
+                <h2>Hadi</h2>
+                <p class="main">
+                    Hi! I'm Andra, a freelance illustrator and sometimes animator from Amsterdam, 
+                    The Netherlands. Stutpak is my creative alias, which I use to design everything 
+                    that comes to mind.
+                    <br>
+                    <br>
+                    I specialize in digital illustrations and simple animations with lots of colors and popping characters. Why do I need custom illustrations or animations, you might ask? Well, scroll down and let me convince you. 
+                </p>
+            </div>
+        </section>
 
-	</head>
-	<body>
-	
-		<div w3-include-html="ALL_HTML/menubox.html"></div>
-		
-		<div id="menubox2">
-			<div id="menu2">
-				<h2>External links:</h2>
-				<p>Check out some other stuff!</p>
-				<hr>
-				<br>
-				<a href="http://othmanismail.com/">Dr. O's website</a>
-				<a href="https://uitm.edu.my/index.php/en/">UiTM</a>
-				<a href="https://teamtrees.org/">Plant trees</a>
-				<a href="https://www.instagram.com/hadijohan_/">My Instagram ;)</a>
-			</div>
-		</div>
-		
-		<div id="parent">
-			
-			<div id="banner">
-				<h1><center>Come with me for an Adventure of a lifetime!</center></h1>
-				<h2><center>Where everything is simple, clean, and beautiful!</center></h2>
-			</div>
-			
-			<div id="child">
-				<div id="mid">
-					
-					<div id="box" >
-						<h2>Greetings!</h2>
-						<img src="ALL_IMAGES/pictures/600.jpg">
-						<p>
-						Hello there and welcome to my website!
-						<br>
-						<br>
-						The main inspiration behind my website comes from my love for the cartoon series, 
-						<q>Adventure Time!</q>
-						, which have been my favourite cartoon since I was young
-						and also the design language of <q>Apple's iOS 13</q>.
-						</p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	<script>
-		includeHTML();
-	</script>
-	</body>
-	<footer>
-	</footer>
+        <section style="background-color: moccasin">
+            <div class="rect-m">
+                <div class="box-1">
+                    <div id="image-2" style="background-image:url(./media/image/pic1.png)"></div>
+                    <h1>Hello and welcome!</h1>
+                    <p> orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
+                </div>
+                <div class="box-1">
+                    <div id="image-2" style="background-image:url(./media/image/pic2.jpg)"></div>
+                    <h1>Hello and welcome!</h1>
+                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
+                </div>
+                <div class="box-1">
+                    <div id="image-2" style="background-image:url(./media/image/pic3.jpg)"></div>
+                    <h1>Hello and welcome!</h1>
+                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="rect-m">
+                <div class="box-2">
+                    <h1>Email me</h1>
+                </div>
+                <div class="box-2">
+                    <h1>Call me</h1>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+    <!--typed.js start-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+                    var typed = new Typed('.type', {
+            // Waits 1000ms after typing "First"
+            strings: ['Hadi','Hadi...','Hadi writes HTML.', 'Hadi writes CSS.','Hadi loves his mum.','Hadi made this website!','Hadi thinks you should give him a job.','Hadi is always on time.','This is Hadi. -->'],
+            typeSpeed:50,
+            backSpeed:50,
+            loop: true,
+            });
+    </script>
+    <!--typed.js end-->
+</body>
 </html>
