@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: grey;
+  background-color: white;
   margin: 0;
 }
 
@@ -45,15 +45,15 @@ body {
           align-items: center;
   scroll-snap-align: start;
   height: 40vh;
-  background-color: black;
+  background-color: #666666;
+  color: white;
 }
 
 .rect {
   background-color: beige;
   color: purple;
-  width: 50%;
+  width: 50vw;
   min-width: 800px;
-  height: 80%;
 }
 
 .rect-m {
@@ -75,12 +75,23 @@ body {
 }
 
 .box-1 {
-  background-color: black;
-  color: white;
+  border-radius: 24px;
+  background-color: #fff4d2;
+  color: #ad6a13;
+  width: 48%;
   min-width: 200px;
-  width: 30%;
-  height: 100%;
+  height: 90%;
+  min-height: 200px;
   position: relative;
+}
+
+.box-1 img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px 24px 0px 0px;
 }
 
 .box-1 h1 {
@@ -97,16 +108,6 @@ body {
   width: 30%;
   height: 90%;
   margin: 10px;
-}
-
-#image-2 {
-  width: 100%;
-  /*or 70%, or what you want*/
-  height: 70%;
-  /*or 70%, or what you want*/
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 h1 {
@@ -126,7 +127,7 @@ p {
 
 p.main {
   font-size: 1.5rem;
-  padding: 15px 30px;
+  padding: 15px 30px 40px 30px;
 }
 
 /*TIMELINE CSS*/
@@ -145,7 +146,7 @@ p.main {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 60%;
+  width: 64%;
   height: 90%;
   position: relative;
 }
@@ -178,6 +179,7 @@ p.main {
   padding: 5px 50px;
   position: relative;
   background-color: inherit;
+  color: #0e3d7c;
   width: 50%;
 }
 
@@ -214,9 +216,9 @@ p.main {
   width: 0;
   z-index: 1;
   right: 40px;
-  border: medium solid yellow;
+  border: medium solid lightblue;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent yellow;
+  border-color: transparent transparent transparent lightblue;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -228,9 +230,9 @@ p.main {
   width: 0;
   z-index: 1;
   left: 40px;
-  border: medium solid yellow;
+  border: medium solid lightblue;
   border-width: 10px 10px 10px 0;
-  border-color: transparent yellow transparent transparent;
+  border-color: transparent lightblue transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -241,13 +243,14 @@ p.main {
 /* The actual content */
 .time_content {
   padding: 0px 0px;
-  background-color: yellow;
+  background-color: lightblue;
   position: relative;
-  border-radius: 24px;
+  border-radius: 10px;
 }
 
 .time_content h1 {
   font-size: 2rem;
+  padding-bottom: 0px;
 }
 
 .time_content p {
@@ -257,9 +260,6 @@ p.main {
 }
 
 @media screen and (max-width: 1100px) {
-  .rect {
-    width: 95%;
-  }
   .rect_m {
     width: 100%;
   }
@@ -272,7 +272,7 @@ p.main {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* Place the timelime to the left */
   .timeline::after {
     left: 20px;
@@ -288,7 +288,7 @@ p.main {
     left: 61px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent yellow transparent transparent;
+    border-color: transparent lightblue transparent transparent;
   }
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
@@ -301,26 +301,42 @@ p.main {
   .right {
     margin-left: 0%;
   }
+  .time_container h1 {
+    font-size: 1.5rem;
+  }
+  .time_container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .time_container h1 {
+    font-size: 1rem;
+  }
+  .time_container p {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .rect {
-    width: 100%;
-    min-width: 100%;
-    height: 100%;
+    min-width: 80%;
   }
   .rect-m {
     width: 100%;
     height: 100%;
   }
   .box-1 {
-    width: 90%;
-    height: 31%;
-    margin-bottom: 5px;
+    min-width: 80%;
+    height: 47.5%;
+    margin-bottom: 10px;
   }
   .box-2 {
     width: 80%;
     height: 40%;
+  }
+  .box-2 h1 {
+    padding: 30px 30px;
   }
   .footer {
     height: 100vh;
@@ -333,8 +349,11 @@ p.main {
     padding: 10px 15px 0px;
   }
   p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 3px 15px;
+  }
+  p.main {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
