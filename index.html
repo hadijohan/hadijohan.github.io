@@ -7,14 +7,47 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Hadi Johan</title>
 </head>
+
 <body>
+
+  <button id="menubutton" onclick="myFunction()">
+    <i></i>
+    <i></i>
+    <i></i>
+  </button>
+
+  <div id="showhidemenu">
+    <h2>Navigate</h2>
+    
+    <a href="#1" onclick="myFunction()">Index</a>
+    <a href="#2" onclick="myFunction()">About Me</a>
+    <a href="#3" onclick="myFunction()">Gallery</a>
+    <a href="#4" onclick="myFunction()">Skills</a>
+    <a href="#5" onclick="myFunction()">Education</a>
+    <a href="#6" onclick="myFunction()">Awards</a>
+    <a href="#footer" onclick="myFunction()">Contact</a>
+    
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("showhidemenu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
     <div class="container">
-        <section style="background-color: lightblue;">
+
+        <section id="1" style="background-color: lightblue;">
                 <h2><span class="type"></span></h2>
                 <img src="./media/image/drawing.png" alt="" srcset="" style="width:10%;">
         </section>
 
-        <section style="background-color: lightpink;">
+        <section id="2" style="background-color: lightpink;">
             <div class="rect">
                 <h2>Hadi</h2>
                 <p class="main">
@@ -28,34 +61,145 @@
             </div>
         </section>
 
-        <section style="background-color: moccasin">
-            <div class="rect-m">
+        <section id="3" style="background-color: moccasin">
+          <div class="rect-m">
 
-                <div class="box-1">
-                    <img src="/media/image/pic1.png">
-                    <h1>Hello and welcome!</h1>
-                    <p> orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
-                </div>
+              <div class="box-1">
+                  <img src="/media/image/pic1.png">
+                  <h1>Hello and welcome!</h1>
+                  <p> orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
+              </div>
 
-                <div class="box-1">
-                    <img src="/media/image/pic2.jpg">
-                    <h1>Hello and welcome!</h1>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.</p>
-                </div>
+              <div class="box-1">
+                  <img src="/media/image/pic2.jpg">
+                  <h1>Hello and welcome!</h1>
+                  <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nam purus leo, semper sit amet justo ut, finibus eleifend mi.
+                  </p>
+              </div>
+
+          </div>
+      </section>
+
+        <section id="4" style="background-color: rgb(255, 173, 140);">
+
+          <div class="rect-m" >
+
+            <div class="box-3">
+
+              <h1 class="icon" style="background-image: url(ALL_IMAGES/icons/cc.svg)"><center>Soft Skills</center></h1>
+                <p>
+                  <b>Communication</b>
+                  <br>
+                  I have an excellent command of Bahasa Melayu and the English language and I am able to communicate professionally according
+                  context and setting.
+                  <br>
+                  <br>
+                  <b>Teamwork</b>
+                  <br>
+                  Able to operate well in a group setting in order to complete a task or achieve a goal.
+                  <br>
+                  <br>
+                  <b>Adaptability</b>
+                  <br>
+                  I am flexible, capable of embracing change and adapt to the pace of an ever changing environment.
+                  <br>
+                  <br>
+                  <b>Problem Solving</b>
+                  <br>
+                  With the use of logical reasoning, decision making and creative thinking, I am able to identify and device solutions
+                  to complex problems.
+                </p>
+                <br>
 
             </div>
+
+            <div class="box-3">
+
+              <h1 class="icon" style="background-image: url(ALL_IMAGES/icons/cc.svg)"><center>Adobe CC</center></h1>
+              <p class="skills">Dreamweaver</p>
+              <div id="barbox">
+                <div class="bar" style="width: 65%;">65%</div>
+              </div>
+              <p class="skills">Photoshop and Lightroom</p>
+              <div id="barbox">
+                <div class="bar" style="width: 80%;">80%</div>
+              </div>
+              <p class="skills">Illustrator</p>
+              <div id="barbox">
+                <div class="bar" style="width: 30%;">30%</div>
+              </div>
+              <p class="skills">Premiere Pro</p>
+              <div id="barbox">
+                <div class="bar" style="width: 45%;">45%</div>
+              </div>
+              <br>
+
+            </div>
+
+            <div class="box-3">
+
+              <h1 class="icon" style="background-image: url(ALL_IMAGES/icons/cc.svg)"><center>Hard Skills</center></h1>
+              <p>
+                <b>Web Development</b>
+                <br>
+                Equipped with the ability to program in HTML, CSS, and Javascript.
+                 <br>
+                 <br>
+                 <b>Adobe Suite</b>
+                 <br>
+                 Self-taught in the use of the Adobe Creative Suite, I am capable of operating creative tools such as Photoshop, Premiere and Dreamweaver.
+                 <br>
+                 <br>
+                 <b>Technical</b>
+                 <br>
+                 I have the capability to diagnose, maintain and repair personal computers.
+              </p>
+              <br>
+
+            </div>
+
+            <div class="box-3">
+
+              <h1 class="icon" style="background-image: url(ALL_IMAGES/icons/cc.svg)"><center>Adobe CC</center></h1>
+              <p class="skills">Dreamweaver</p>
+              <div id="barbox">
+                <div class="bar" style="width: 65%;">65%</div>
+              </div>
+              <p class="skills">Photoshop and Lightroom</p>
+              <div id="barbox">
+                <div class="bar" style="width: 80%;">80%</div>
+              </div>
+              <p class="skills">Illustrator</p>
+              <div id="barbox">
+                <div class="bar" style="width: 30%;">30%</div>
+              </div>
+              <p class="skills">Premiere</p>
+              <div id="barbox">
+                <div class="bar" style="width: 35%;">35%</div>
+              </div>
+              <br>
+
+            </div>
+
+          </div>
+
         </section>
 
-        <section style="background-color: mediumpurple;">
+        <section id="5" style="background-color: mediumpurple;">
           
           <div class="timeline">
-            
-            <div class="time_container left">
-              <div class="time_content">
-                <h1>2017</h1>
-                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
-              </div>
-            </div>
+
             <div class="time_container right">
 
               <div class="time_content">
@@ -96,7 +240,51 @@
 
         </section>
 
-        <div class="footer">
+        <section id="6" style="background-color: rgb(216, 112, 164);">
+          
+          <div class="timeline">
+
+            <div class="time_container right">
+
+              <div class="time_content">
+                <h1>2016</h1>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
+              </div>
+            </div>
+
+            <div class="time_container left">
+              <div class="time_content">
+                <h1>2015</h1>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
+              </div>
+            </div>
+
+            <div class="time_container right">
+              <div class="time_content">
+                <h1>2012</h1>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
+              </div>
+            </div>
+
+            <div class="time_container left">
+              <div class="time_content">
+                <h1>2011</h1>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
+              </div>
+            </div>
+
+            <div class="time_container right">
+              <div class="time_content">
+                <h1>2007</h1>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto</p>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <div id="footer" class="footer">
             <div class="rect-m">
                 <div class="box-2">
                     <h1>Email me</h1>
@@ -120,5 +308,7 @@
             });
     </script>
     <!--typed.js end-->
+
 </body>
+
 </html>
