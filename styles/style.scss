@@ -11,7 +11,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
     align-content: center;
 }
 
@@ -26,12 +25,41 @@
     border-radius: 24px;
 }
 
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}	
+	to{
+		opacity: 1;
+	}
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 html{
     font-family: Helvetica, sans-serif, Arial;
+    height:100%;
+	background: #ffffff00 url('../bg-min.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*WARNING, SECTION TEXT
+
+#about-me::before{
+    position: relative;
+    content: "ABOUT ME";
+    font-size: 800%;
+  }
+  
+  WARNING, SECTION TEXT*/
+
+h2{
+    color: $h2Color
 }
 
 #menubutton{
@@ -47,6 +75,10 @@ html{
     display:flex;
     align-items: center;
 	background-color: $menuButtonBg;
+}
+#menubutton:focus{
+    transform: rotate(90deg);
+    transition-duration: 0.4s;
 }
 #menubutton i{
     position: absolute;
@@ -83,6 +115,7 @@ html{
   position:fixed;
   display: none;
   background-color: $menuBackground;
+  animation: 0.3s fadeIn;
 
    h2{
        color: $menuH2;
@@ -94,7 +127,7 @@ html{
         color: $menuLinks;
         top: auto;
         bottom: auto;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 10px;
         padding: 10px;
         display: block;
@@ -118,9 +151,25 @@ body{
         height: 100%;
         width: 100%;
         section{
+
             scroll-snap-align: start;
             @include flexCenter();
             height:100vh;
+            position:relative;
+
+                div.sectionbackground{
+                    margin: 3rem;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 0;
+                    max-width: 100%;
+                    color: salmon;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    /* -webkit-text-stroke: 1px $primaryRect; */
+                    word-break: break-all;
+                }
            }
     }
 }
@@ -131,6 +180,29 @@ body{
     background-color: $footerColor;
     color: $footerText;
     scroll-snap-align: start;
+
+        .box-2{
+            position: relative;
+        
+
+            a{
+                background-color: $contactLinkBackground;
+                color: $contactLink;
+                text-decoration: none;
+                display: block;
+                width: 8em;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding: 30px;
+                font-weight: bold;
+                box-shadow: 0px 0px 0px 1px $footerLinkOutline;
+            }
+            a:hover{
+                background-color: $contactLinkBackgroundHover;
+                color: $contactLinkHover;
+            }
+        }
 }
 .rect{
     background-color: $primaryRect;
@@ -142,6 +214,9 @@ body{
     @include flexCenter2();
     width: 80%;
     height: 80%;
+}
+.reverse{
+    flex-wrap: wrap-reverse;
 }
 .rect-l{
     width:100%;
@@ -157,6 +232,7 @@ body{
     min-height: 200px;
     position: relative;
     overflow: hidden;
+    z-index: 3;
 }
 .box-1 img{
     width:100%;
@@ -177,11 +253,16 @@ body{
     width: 30%;
     height:90%;
     margin: 10px;
+    box-shadow: 0px 0px 0px 1px $footerOutline;
+    z-index: 3;
 }
 .box-3{
     /*@include roundedCorners();*/
     width:24%;
-    background-color: white;
+    background-color: $box3Color;
+    border-radius: 10px;
+    color: $box3Text;
+    z-index: 3;
 }
 .box-3 h1{
 
@@ -208,7 +289,7 @@ p.main{
 .timeline{
     @include flexCenter2();
     width: 64%;
-    height: 90%;
+    height: 80%;
     position: relative;
 }
 
@@ -308,7 +389,7 @@ p.main{
 #barbox {
     height: 20px;
     width: 83%;
-    background-color: #e5e5e5;
+    background-color: $barBackground;
     border-radius: 50px;
     overflow: hidden;
     margin-left: auto;
@@ -321,7 +402,7 @@ p.main{
 	animation: OnLoad;
 	-webkit-animation-duration: 3s;
 	animation-duration: 3s;
-	background-color: #007aff;
+	background-color: $barColor;
 	height: 20px;
 	color: white;
 	text-align: right;
@@ -398,6 +479,10 @@ p.main{
         min-width: 80%;
         height:(95%/2);
         margin-bottom: 10px;
+
+        p{
+            font-size: 0.7rem;
+        }
     }
     .box-2{
         width: 80%;

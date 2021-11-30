@@ -1,0 +1,88 @@
+.toggle-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: grey;
+  }
+  
+  .toggle-menu i {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: blue;
+    width: 30px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .toggle-menu i:nth-child(1) {
+    top: 16px;
+  }
+  
+  .toggle-menu i:nth-child(2) {
+    top: 24px;
+  }
+  
+  .toggle-menu i:nth-child(3) {
+    top: 32px;
+  }
+  
+  .toggle-menu.active i:nth-child(1) {
+    top: 25px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+  
+  .toggle-menu.active i:nth-child(2) {
+    background: transparent;
+  }
+  
+  .toggle-menu.active i:nth-child(3) {
+    top: 25px;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+  }
+  
+  .menu-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .menu-drawer {
+    width: 50vw;
+    background-color: orange;
+    height: 100vh;
+    position: absolute;
+    left: 100vw;
+    margin-left: 50vw;
+    top: 0;
+    transition: left linear .2s;
+    padding: 50px;
+  }
+  
+  .open {
+    left: 0px;
+    transition: left linear .2s;
+  }
+  
+  .menu-drawer {
+    li {
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #555;
+        &:hover {
+          color: #0094FC;
+        }
+      }
+    }
+}

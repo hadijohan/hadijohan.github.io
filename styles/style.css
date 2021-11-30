@@ -1,3 +1,21 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +23,25 @@
 
 html {
   font-family: Helvetica, sans-serif, Arial;
+  height: 100%;
+  background: #ffffff00 url("../bg-min.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*WARNING, SECTION TEXT
+
+#about-me::before{
+    position: relative;
+    content: "ABOUT ME";
+    font-size: 800%;
+  }
+  
+  WARNING, SECTION TEXT*/
+h2 {
+  color: #0e3d7c;
 }
 
 #menubutton {
@@ -28,11 +65,18 @@ html {
   background-color: black;
 }
 
+#menubutton:focus {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
 #menubutton i {
   position: absolute;
   display: block;
   height: 2px;
-  background: pink;
+  background: white;
   width: 30px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -64,10 +108,12 @@ html {
   position: fixed;
   display: none;
   background-color: black;
+  -webkit-animation: 0.3s fadeIn;
+          animation: 0.3s fadeIn;
 }
 
 #showhidemenu h2 {
-  color: #ffd61d;
+  color: salmon;
   font-size: 2rem;
 }
 
@@ -76,18 +122,18 @@ html {
   color: white;
   top: auto;
   bottom: auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px;
   padding: 10px;
   display: block;
 }
 
 #showhidemenu a:hover {
-  color: #ffd61d;
+  color: salmon;
 }
 
 body {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   margin: 0;
   height: 100vh;
   width: 100vw;
@@ -114,6 +160,21 @@ body .container section {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  position: relative;
+}
+
+body .container section div.sectionbackground {
+  margin: 3rem;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  max-width: 100%;
+  color: salmon;
+  font-size: 3rem;
+  font-weight: bold;
+  /* -webkit-text-stroke: 1px $primaryRect; */
+  word-break: break-all;
 }
 
 .footer {
@@ -127,14 +188,38 @@ body .container section {
       -ms-flex-align: center;
           align-items: center;
   height: 40vh;
-  background-color: #666666;
+  background-color: black;
   color: white;
   scroll-snap-align: start;
 }
 
+.footer .box-2 {
+  position: relative;
+}
+
+.footer .box-2 a {
+  background-color: black;
+  color: salmon;
+  text-decoration: none;
+  display: block;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 0px 1px salmon;
+          box-shadow: 0px 0px 0px 1px salmon;
+}
+
+.footer .box-2 a:hover {
+  background-color: salmon;
+  color: black;
+}
+
 .rect {
-  background-color: beige;
-  color: purple;
+  background-color: #f5efe4;
+  color: #0e3d7c;
   width: 50vw;
   min-width: 800px;
 }
@@ -148,13 +233,15 @@ body .container section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   width: 80%;
   height: 80%;
+}
+
+.reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .rect-l {
@@ -164,14 +251,15 @@ body .container section {
 
 .box-1 {
   /*@include roundedCorners(); */
-  background-color: #fff4d2;
-  color: #ad6a13;
+  background-color: #f5efe4;
+  color: #0e3d7c;
   width: 48%;
   min-width: 200px;
   height: 90%;
   min-height: 200px;
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 
 .box-1 img {
@@ -192,17 +280,23 @@ body .container section {
 }
 
 .box-2 {
-  background-color: green;
+  background-color: black;
   min-width: 200px;
   width: 30%;
   height: 90%;
   margin: 10px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 146, 210, 0);
+          box-shadow: 0px 0px 0px 1px rgba(255, 146, 210, 0);
+  z-index: 3;
 }
 
 .box-3 {
   /*@include roundedCorners();*/
   width: 24%;
-  background-color: white;
+  background-color: #f5efe4;
+  border-radius: 10px;
+  color: #0e3d7c;
+  z-index: 3;
 }
 
 h1 {
@@ -236,13 +330,10 @@ p.main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   width: 64%;
-  height: 90%;
+  height: 80%;
   position: relative;
 }
 
@@ -256,9 +347,6 @@ p.main {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   content: " ";
@@ -311,9 +399,9 @@ p.main {
   width: 0;
   z-index: 1;
   right: 40px;
-  border: medium solid lightblue;
+  border: medium solid #f5efe4;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent lightblue;
+  border-color: transparent transparent transparent #f5efe4;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -325,9 +413,9 @@ p.main {
   width: 0;
   z-index: 1;
   left: 40px;
-  border: medium solid lightblue;
+  border: medium solid #f5efe4;
   border-width: 10px 10px 10px 0;
-  border-color: transparent lightblue transparent transparent;
+  border-color: transparent #f5efe4 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -338,7 +426,7 @@ p.main {
 /* The actual content */
 .time_content {
   padding: 0px 0px;
-  background-color: lightblue;
+  background-color: #f5efe4;
   position: relative;
   border-radius: 10px;
 }
@@ -357,7 +445,7 @@ p.main {
 #barbox {
   height: 20px;
   width: 83%;
-  background-color: #e5e5e5;
+  background-color: #c7c7c7;
   border-radius: 50px;
   overflow: hidden;
   margin-left: auto;
@@ -371,7 +459,7 @@ p.main {
   animation: OnLoad;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
-  background-color: #007aff;
+  background-color: #4e7cfa;
   height: 20px;
   color: white;
   text-align: right;
@@ -415,7 +503,7 @@ p.main {
     left: 61px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent lightblue transparent transparent;
+    border-color: transparent #f5efe4 transparent transparent;
   }
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
@@ -446,6 +534,9 @@ p.main {
     min-width: 80%;
     height: 47.5%;
     margin-bottom: 10px;
+  }
+  .box-1 p {
+    font-size: 0.7rem;
   }
   .box-2 {
     width: 80%;

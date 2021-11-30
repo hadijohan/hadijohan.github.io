@@ -1,23 +1,37 @@
-$backgroundColor: rgb(255, 255, 255);
-$primaryRect: beige;
-$mainTextColor: purple;
+$backgroundColor: rgba(0, 0, 0, 0);
+$primaryRect: rgb(245, 239, 228);
+$mainTextColor: rgb(14, 61, 124);
+
+$h2Color: rgb(14, 61, 124);
+
+$cardColor: rgb(245, 239, 228);
+$cardText: rgb(14, 61, 124);
+
+$box3Color: rgb(245, 239, 228);
+$box3Text: rgb(14, 61, 124);
 
 $menuButtonBg: black;
-$menuButtonLines: pink;
+$menuButtonLines: white;
 $menuBackground: black;
-$menuH2: rgb(255, 214, 29);
+$menuH2: salmon;
 $menuLinks: white;
-$menuLinksHover: rgb(255, 214, 29);
+$menuLinksHover: salmon;
 
-$cardColor: rgb(255, 244, 210);
-$cardText: rgb(173, 106, 19);
+$barColor: rgb(78, 124, 250);
+$barBackground: rgb(199, 199, 199);
 
 $timelineVerticalLine: white;
 $timelineCircle: white;
 $timelineCircleBorder: White;
-$timelineContainer: lightblue;
+$timelineContainer: rgb(245, 239, 228);
 $timelineText: rgb(14, 61, 124);
 
-$footerColor: rgb(102, 102, 102);
-$footerBox: green;
+$footerColor: rgb(0, 0, 0);
+$footerBox: rgb(0, 0, 0);
 $footerText: white;
+$footerOutline: rgba(255, 146, 210, 0);
+$contactLink: salmon;
+$contactLinkHover: black;
+$contactLinkBackground: black;
+$contactLinkBackgroundHover: salmon;
+$footerLinkOutline: salmon;
